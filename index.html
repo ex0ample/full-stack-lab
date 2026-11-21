@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09111f" />
+    <title>Full Stack Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Full Stack Lab home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Full Stack Lab</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.8c.85 0 1.71.12 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+        </svg>
+        GitHub
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Developer Playground</p>
+          <h1>Build. Break.<br /><em>Understand.</em></h1>
+          <p class="subtitle">
+            A curated collection of full-stack experiments, practical demos,
+            and production-minded patterns.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore projects <span>↓</span></a>
+            <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">
+              View source
+            </a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-label="Lab terminal preview">
+          <div class="terminal-bar">
+            <div class="terminal-dots"><i></i><i></i><i></i></div>
+            <span>lab/index.ts</span>
+            <span class="terminal-status">● live</span>
+          </div>
+          <div class="terminal-code">
+            <p><span class="line-no">1</span><span class="purple">const</span> <span class="cyan">lab</span> = {</p>
+            <p><span class="line-no">2</span>&nbsp;&nbsp;focus: <span class="green">'full-stack'</span>,</p>
+            <p><span class="line-no">3</span>&nbsp;&nbsp;stack: [<span class="green">'React'</span>, <span class="green">'Node'</span>, <span class="green">'Postgres'</span>],</p>
+            <p><span class="line-no">4</span>&nbsp;&nbsp;status: <span class="green">'building'</span></p>
+            <p><span class="line-no">5</span>};</p>
+            <p><span class="line-no">6</span></p>
+            <p><span class="line-no">7</span><span class="purple">await</span> <span class="cyan">lab</span>.<span class="yellow">explore</span>();</p>
+            <p class="cursor-line"><span class="line-no">8</span><span class="cursor"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="network-access" aria-label="Local network access">
+        <div class="network-copy">
+          <p class="eyebrow"><span></span> Lab is live</p>
+          <h2>Scan or open</h2>
+          <a class="network-url" href="http://10.80.7.56:8000/" target="_blank" rel="noreferrer">
+            <span>LOCAL URL</span>
+            http://10.80.7.56:8000/
+          </a>
+        </div>
+        <a class="qr-card" href="http://10.80.7.56:8000/" target="_blank" rel="noreferrer" aria-label="Open the lab at 10.80.7.56">
+          <span class="qr-frame">
+            <img src="lab-qr.png" alt="QR code for http://10.80.7.56:8000/" />
+          </span>
+          <span class="scan-label">Scan to open <b>↗</b></span>
+        </a>
+      </section>
+
+      <section class="stats" id="stack" aria-label="Lab statistics">
+        <div><strong>12</strong><span>Projects</span></div>
+        <div><strong>08</strong><span>Technologies</span></div>
+        <div><strong>24</strong><span>Experiments</span></div>
+        <div><strong>100%</strong><span>Open Source</span></div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Selected work</p>
+            <h2>Recent Projects</h2>
+          </div>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">View all <span>↗</span></a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="card-preview api-preview">
+              <div class="preview-label"><i></i> API Monitor</div>
+              <div class="metric-row">
+                <div><span>Requests</span><strong>24.8k</strong><small>+12.4%</small></div>
+                <div><span>Latency</span><strong>42ms</strong><small>−8.1%</small></div>
+              </div>
+              <div class="chart" aria-hidden="true">
+                <span style="--h:32%"></span><span style="--h:48%"></span><span style="--h:38%"></span>
+                <span style="--h:68%"></span><span style="--h:52%"></span><span style="--h:82%"></span>
+                <span style="--h:64%"></span><span style="--h:90%"></span><span style="--h:74%"></span>
+                <span style="--h:96%"></span><span style="--h:88%"></span><span style="--h:78%"></span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta"><span>01</span><span>Full Stack</span></div>
+              <h3>API Analytics Dashboard</h3>
+              <p>Real-time monitoring dashboard with streaming data and custom alerts.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-preview auth-preview">
+              <div class="auth-window">
+                <div class="auth-logo">A</div>
+                <div class="auth-title">Welcome back</div>
+                <div class="auth-field"></div>
+                <div class="auth-field"></div>
+                <div class="auth-button"></div>
+              </div>
+              <div class="floating-badge badge-one">✓ Secure</div>
+              <div class="floating-badge badge-two">2FA</div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta"><span>02</span><span>Authentication</span></div>
+              <h3>Secure Auth System</h3>
+              <p>Complete authentication flow with OAuth, sessions, and MFA.</p>
+              <div class="tags"><span>Next.js</span><span>Auth.js</span><span>Prisma</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-preview data-preview">
+              <div class="database">
+                <div class="db-top"></div>
+                <div class="db-table"></div>
+                <div class="db-table"></div>
+                <div class="db-bottom"></div>
+              </div>
+              <div class="query-box">
+                <span>SELECT</span> * FROM users<br />
+                <span>WHERE</span> status = <b>'active'</b>;
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta"><span>03</span><span>Database</span></div>
+              <h3>Data Explorer</h3>
+              <p>Visual SQL interface for querying and exploring datasets.</p>
+              <div class="tags"><span>TypeScript</span><span>GraphQL</span><span>Redis</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Full Stack Lab</p>
+      <p>Built with curiosity <span>◆</span></p>
+    </footer>
+  </body>
+</html>
